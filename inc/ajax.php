@@ -1,20 +1,20 @@
 <?php
-function ym_save_settings() {
+function ym_save_settings()
+{
+
+    $ym_settings_key= sanitize_text_field($_POST['ym_settings_key']);
+    $ym_settings_value  = (sanitize_text_field($_POST['ym_settings_value']) == "checked") ? 1 : 0;
+
     ob_start();
-    $gfms_file_address = sanitize_text_field($_POST['gfms_file_address']);
-    echo '<div id="gfms_up_res_wrapper">';
 
-//    echo $gfms_file_address;
+//    echo "key:$ym_settings_key __ value:$ym_settings_value";
 
-//    echo "<div class='gfms-msg-upload'>فایل آپلود شد</div>";
-
-
-    echo '<div class="updated notice is-dismissible wow flip" style="width: 300px;"><p>'.var_dump($_FILES['gfms_file_address']).'</p></div>';
-    echo '</div>';
+    update_option( $ym_settings_key, $ym_settings_value );
 
     $output_html = ob_get_clean();
 
     $result['content'] = $output_html;
+    $result['ym_amib'] = 'asd';
 
     wp_die(json_encode($result));
 }

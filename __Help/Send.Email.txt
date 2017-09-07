@@ -1,8 +1,7 @@
 <!-- Send Email -->
 <?php
 
-	include YZES_PATH . '/inc/gwme_email_sender.php';
-	$email_image_header = get_template_directory_uri() . '/images/email-header.png';
+	include YZES_PATH . '/inc/class_yzes_email.php';
 	ob_start();
 	include Your_Email_Template_PATH . '/tpl/contact-email.php';
 	$email_template = ob_get_clean();

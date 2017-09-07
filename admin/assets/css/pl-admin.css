@@ -1,3 +1,7 @@
+*:focus {
+    outline: 0 !important;
+}
+
 .icon-widget {
     margin-left: 10px;
 }
@@ -52,6 +56,7 @@
 
 .yazdi-wp-tbl thead td {
     border-bottom: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
 }
 
 .yazdi-wp-tbl tbody tr:hover {
@@ -65,16 +70,19 @@
     border-top: 2px solid #0073aa;
     color: #0073aa !important;
     background-color: #f5f5f5 !important;
+    border-left: 1px solid #e1e1e1 !important;
 }
 
 .yazdi-wp-tbl tfoot th {
     border-bottom: 2px solid #0073aa !important;
     color: #0073aa !important;
     background-color: #f5f5f5 !important;
+    border-left: 1px solid #e1e1e1 !important;
 }
 
 .yazdi-wp-tbl td {
     line-height: 2.5em !important;
+    border-left: 1px solid #e1e1e1 !important;
 }
 
 .yazdi-wp-tbl td button,
@@ -87,7 +95,7 @@
 }
 
 .yazdi-wp-tbl td a > span {
-    margin-top: 8px;
+    margin-top: 2px;
 }
 
 .dash-left-btn {
@@ -121,7 +129,7 @@
 
 .ym-wrapper {
     background-color: white;
-    padding: 14px 17px;
+    padding: 20px;
     margin-right: -10px;
     margin-top: 20px;
     border-top: 2px solid #0073aa;
@@ -139,8 +147,6 @@
     color: #0073aa;
 }
 
-/* Start Styles for Yazdi Settings Page */
-/* Start Styles for Yazdi Settings Page */
 /* The switch - the box around the slider */
 .switch {
     position: relative;
@@ -150,7 +156,9 @@
 }
 
 /* Hide default HTML checkbox */
-.switch input {display:none;}
+.switch input {
+    display: none;
+}
 
 /* The slider */
 .slider {
@@ -199,6 +207,7 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
 /* End Styles for Yazdi Settings Page */
 
 .ym-row > label:nth-child(1) {
@@ -208,4 +217,363 @@ input:checked + .slider:before {
 
 .ym-row {
     height: 45px;
+    display: inline-block;
+    padding-top: 19px;
+    background-color: #f7f7f7;
+    padding-right: 17px;
+    padding-left: 19px;
+    border-radius: 5px;
+    margin-bottom: 17px;
+    border: 2px solid #e1e1e1;
 }
+
+h1.headline-text > span {
+    font-size: 34px;
+    display: inline-table;
+    margin-left: 10px;
+    color: #0073aa;
+}
+
+a.ym-help {
+    transition: .3s;
+    text-decoration: none;
+    border: 0;
+    outline: none;
+}
+
+a.ym-help:focus {
+    outline: 0 !important;
+}
+
+a.ym-help:hover {
+    color: #cccccc;
+}
+
+a.ym-help > span {
+    font-size: 41px;
+    margin-top: 15px;
+}
+
+.ym-help-details {
+    background-color: #f7f7f7;
+    margin-top: -19px;
+    padding: 4px 12px;
+    min-height: 61px;
+    margin-bottom: 17px;
+    border: 2px solid #e1e1e1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: none;
+}
+
+xmp.ym-codes {
+    direction: ltr;
+    text-align: left;
+    background-color: white;
+    /* border-radius: 3px; */
+    border: 2px solid #e1e1e1;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+}
+
+.ym-msg {
+    height: 39px;
+}
+
+/* New Styles Added In Version 1.5 */
+
+.yazdi-page {
+}
+
+.yazdi-page input[type="text"],
+.yazdi-page .ym-select,
+.yazdi-page textarea ,
+.yazdi-page input[type="file"] {
+    font-size: 14px;
+    padding: 4px 12px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    box-shadow: 0 6px 11px -6px #ddd;
+    height: 36px;
+}
+.yazdi-page textarea {
+    height: auto;
+}
+
+.yazdi-page .ym-select span {
+    font-size: 21px;
+    position: absolute;
+    left: 7px;
+    top: 9px;
+    color: #929292;
+}
+
+.yazdi-page .ym-select {
+    height: 37px;
+    margin-top: 4px;
+    display: inline-block;
+    padding: 0;
+    min-width: 205px;
+    position: relative;
+}
+
+.yazdi-page .ym-select select {
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    padding: 0;
+    padding-left: 35px;
+    padding-right: 13px;
+    height: 36px;
+    width: 100%;
+    background: transparent;
+    box-shadow: 0 0 0;
+}
+
+.yazdi-page .ym-frm-inline {
+    position: relative;
+    display: inline-block;
+}
+
+.yazdi-page .ym-frm-row {
+    position: relative;
+    display: block;
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.yazdi-page .ym-frm-row label ,
+.yazdi-page .ym-frm-row input ,
+.yazdi-page .ym-frm-row .ym-select {
+    display: block;
+    margin: 3px 0;
+    width: 100%;
+}
+
+.yazdi-page .gfms-show-ext {
+    font-size: 12px;
+    float: left;
+}
+.yazdi-page .gfms-show-ext span {
+    background-color: #e1e1e1;
+    border-radius: 5px;
+    padding: 2px 8px;
+    display: inline-block;
+}
+.yazdi-page .filters-wrapper {
+    margin-top: 20px;
+}
+
+.yazdi-page .filters-wrapper .ym-frm-inline {
+    margin: 8px 5px;
+}
+
+.yazdi-page .filters-wrapper .ym-frm-inline label {
+    position: absolute;
+    top: -19px;
+    font-size: 13px;
+    right: 7px;
+    display: none;
+}
+
+.yazdi-page .filters-wrapper label.ym-check {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 5px;
+}
+
+.yazdi-page .filters-wrapper .ym-frm-inline input[type="text"] {
+    width: 205px;
+    transition: all .3s;
+}
+
+.ym-button {
+    color: #555;
+    border-color: #ccc;
+    background: #f7f7f7;
+    -webkit-box-shadow: 0 1px 0 #ccc;
+    box-shadow: 0 1px 0 #ccc;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 27px;
+    height: 37px;
+    margin: 0;
+    padding: 4px 17px 1px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+.ym-button > span {
+    margin-top: 3px;
+    margin-right: 7px;
+}
+
+.ym-button-new {
+    border-left: 0;
+
+}
+
+.ym-button-new > span {
+    font-size: 45px;
+    margin: -8px 0 0 -14px;
+}
+
+.ym-button:hover {
+    color: #000000;
+    border-color: #000000;
+    background: #ffffff;
+    box-shadow: 0 1px 0 #000000;
+    transition: all .3s;
+    text-shadow: 0 0 0 #fff;
+}
+
+.ym-button-blue {
+    background: #0085ba;
+    border-color: #0073aa #006799 #006799;
+    -webkit-box-shadow: 0 1px 0 #006799;
+    box-shadow: 0 1px 0 #006799;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #006799, -1px 0 1px #006799, 0 1px 1px #006799, 1px 0 1px #006799;
+}
+
+.ym-button-blue:hover {
+    color: #0073aa;
+    border-color: #0073aa;
+    box-shadow: 0 1px 0 #0073aa;
+}
+
+.ym-button-blue-rev {
+    color: #0073aa;
+    border-color: #0073aa;
+    box-shadow: 0 1px 0 #0073aa;
+    background-color: white;
+}
+
+.ym-button-blue-rev:hover {
+    background: #0085ba;
+    border-color: #0073aa #006799 #006799;
+    -webkit-box-shadow: 0 1px 0 #006799;
+    box-shadow: 0 1px 0 #006799;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #006799, -1px 0 1px #006799, 0 1px 1px #006799, 1px 0 1px #006799;
+}
+
+.ym-button-red {
+    background: #ba0000;
+    border-color: #750404;
+    -webkit-box-shadow: 0 1px 0 #ba0000;
+    box-shadow: 0 1px 0 #ba0000;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #ba0000, -1px 0 1px #ffffff, 0 1px 1px #ba0000, 1px 0 1px #ffffff;
+}
+
+.ym-button-red:hover {
+    color: #ba0000;
+    border-color: #ba0000;
+    box-shadow: 0 1px 0 #ba0000;
+}
+
+.ym-button-red-rev {
+    color: #ba0000;
+    border-color: #ba0000;
+    box-shadow: 0 1px 0 #ba0000;
+    background-color: white;
+}
+
+.ym-button-red-rev:hover {
+    background: #ba0000;
+    border-color: #750404;
+    -webkit-box-shadow: 0 1px 0 #ba0000;
+    box-shadow: 0 1px 0 #ba0000;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #ba0000, -1px 0 1px #ffffff, 0 1px 1px #ba0000, 1px 0 1px #ffffff;
+}
+
+.yazdi-wp-tbl td a {
+    padding-top: 5px;
+}
+
+input[type=checkbox]:checked:before {
+    margin: -5px -5px 0 0;
+    color: #1e8cbe;
+    font-size: 28px;
+}
+
+input[type=checkbox] {
+    margin-right: 7px;
+}
+
+input[type=checkbox].yzd-check, input[type=radio].yzd-radio {
+    width: 17px !important;
+    height: 17px !important;
+    position: relative;
+    top: 6px
+}
+
+.yazdi-page .tablenav .tablenav-pages a {
+    border-radius: 4px;
+    color: #0085ba;
+    min-width: 41px;
+}
+
+.yazdi-page .tablenav .tablenav-pages a:hover {
+    color: white;
+}
+
+.yazdi-page .tablenav .tablenav-pages a span.dashicons {
+    width: auto;
+    height: auto;
+    font-size: inherit;
+}
+label.error-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block !important;
+    width: auto !important;
+    color: #ec0000;
+}
+.ym-select label.error-js {
+    top:-27px;
+}
+/* Start Custom W# Franework */
+.yzd-modal header,
+.yzd-modal footer {
+    background-color: #0073aa !important;
+    color: white;
+}
+
+.yzd-closebtn {
+    float: left !important;
+}
+
+.yzd-modal header span.title {
+    margin-top: 7px;
+    display: inline-block;
+}
+
+.yzd-modal .yzd-body {
+    padding: 15px;
+}
+
+/* End Custom W# Franework */

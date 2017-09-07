@@ -63,12 +63,31 @@ class YZES_Public {
 		wp_enqueue_script( 'yzes-public-styles', YZES_URL . 'assets/js/pl-public-styles.js', array( 'jquery' ),
 			$this->version, false );
 
+		if( get_option('ym_amib') == 1 ) {
+			################# Farsi Calendar Selection (Amib Calendar) - Frontend
+			wp_enqueue_style( 'yzes.fa.cal.selection.style', YZES_URL . 'lib/fa-date-selection/js-persian-cal.css', array(), $this->version,
+				'all' );
+			wp_enqueue_script( 'yzes.fa.cal.selection.script', YZES_URL . 'lib/fa-date-selection/js-persian-cal.min.js', array( 'jquery' ),
+				$this->version, false );
+		}
 
-		################# Farsi Calendar Selection (Amib Calendar) - Frontend
-		wp_enqueue_style( 'yzes.fa.cal.selection.style', YZES_URL . 'lib/fa-date-selection/js-persian-cal.css', array(), $this->version,
-			'all' );
-		wp_enqueue_script( 'yzes.fa.cal.selection.script', YZES_URL . 'lib/fa-date-selection/js-persian-cal.min.js', array( 'jquery' ),
-			$this->version, false );
+		if( get_option('ym_jq_validator') == 1 ) {
+			################# jQuery Validation - Frontend
+			wp_enqueue_script( 'yzes.jquery.validation', YZES_URL . 'lib/jquery_validation/jquery.validate.js', array(),
+				$this->version,
+				'all' );
+			wp_enqueue_script( 'yzes.jquery.validation.org', YZES_URL . 'lib/jquery_validation/jqueryvalidation.org.js',
+				array(),
+				$this->version,
+				'all' );
+		}
+
+		if( get_option('ym_chartjs') == 1 ) {
+			################# Chartjs - Frontend
+			wp_enqueue_script('yzes.jquery.chartjs', YZES_URL . 'lib/Chart.min.js', array(),
+				$this->version,
+				'all');
+		}
 
 	}
 
@@ -80,11 +99,30 @@ class YZES_Public {
 		wp_enqueue_script( 'yzes-public-styles', YZES_URL . 'assets/js/pl-public-styles.js', array( 'jquery' ),
 			$this->version, false );
 
+		if( get_option('ym_amib') == 1 ) {
+			################# Farsi Calendar Selection (Amib Calendar) - Admin
+			wp_enqueue_style('yzes.fa.cal.selection.style', YZES_URL . 'lib/fa-date-selection/js-persian-cal.css', array(), $this->version,
+				'all');
+			wp_enqueue_script('yzes.fa.cal.selection.script', YZES_URL . 'lib/fa-date-selection/js-persian-cal.min.js', array('jquery'),
+				$this->version, false);
+		}
 
-		################# Farsi Calendar Selection (Amib Calendar) - Admin
-		wp_enqueue_style( 'yzes.fa.cal.selection.style', YZES_URL . 'lib/fa-date-selection/js-persian-cal.css', array(), $this->version,
-			'all' );
-		wp_enqueue_script( 'yzes.fa.cal.selection.script', YZES_URL . 'lib/fa-date-selection/js-persian-cal.min.js', array( 'jquery' ),
-			$this->version, false );
+		if( get_option('ym_jq_validator') == 1 ) {
+			################# jQuery Validation - Admin
+			wp_enqueue_script( 'yzes.jquery.validation', YZES_URL . 'lib/jquery_validation/jquery.validate.js', array(),
+				$this->version,
+				'all' );
+			wp_enqueue_script( 'yzes.jquery.validation.org', YZES_URL . 'lib/jquery_validation/jqueryvalidation.org.js',
+				array(),
+				$this->version,
+				'all' );
+		}
+
+		if( get_option('ym_chartjs') == 1 ) {
+			################# Chartjs - Admin
+			wp_enqueue_script('yzes.jquery.chartjs', YZES_URL . 'lib/Chart.min.js', array(),
+				$this->version,
+				'all');
+		}
 	}
 }

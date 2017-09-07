@@ -64,11 +64,17 @@ class YZES_Admin {
 		 * class.
 		 */
 
-		wp_enqueue_style( 'yzes-admin.css', YZES_URL . 'admin/assets/css/pl-admin.css', array(), $this->version, 'all' );
-		wp_enqueue_script( 'yzes-admin.js', YZES_URL . 'admin/assets/js/pl-admin.js', array( 'jquery' ), $this->version,
-			false );
-		wp_enqueue_script( 'yzes-chart.js', 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js', array( 'jquery' ), $this->version,
-			false );
+		wp_enqueue_style(   'yzes-admin.css',
+						    YZES_URL . 'admin/assets/css/pl-admin.css',
+							array(), $this->version,
+							'all'
+		);
+		wp_enqueue_script( 'yzes-admin.js',
+							YZES_URL . 'admin/assets/js/pl-admin.js',
+							array( 'jquery' ),
+							$this->version,
+							false
+		);
 
 		wp_enqueue_script(
 			'mszy-ajax.js',
@@ -77,7 +83,11 @@ class YZES_Admin {
 			$this->version,
 			false
 		);
-		wp_localize_script('mszy-ajax.js', 'data', array('ajax_url'=>admin_url('admin-ajax.php')));
+
+		wp_localize_script( 'mszy-ajax.js',
+							'data',
+							array('ajax_url'=>admin_url('admin-ajax.php'))
+		);
 
 	}
 
@@ -85,6 +95,7 @@ class YZES_Admin {
 
 		$yzes_theme_options_hook = add_menu_page( 'تنظیمات کتابخانه‌ها', 'کتابخانه‌ها', 'manage_options',
 		'yazdi_essentials-page', array( $this, 'yzes_options_page' ), 'dashicons-admin-generic');
+
 	}
 
 	//Plugin option page operations
