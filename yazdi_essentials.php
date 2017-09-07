@@ -41,8 +41,8 @@ final class Yazdi_Essentials {
         define('YZES_CLASS_PATH',trailingslashit(YZES_PATH.'inc/classes'));
         define('YZES_TPL',trailingslashit(YZES_PATH.'tpl'));
         define('YZES_CSS',trailingslashit(YZES_URL.'assets/css'));
-        define('YZES_JS',trailingslashit(YZES_PATH.'assets/js'));
-        define('YZES_IMAGES',trailingslashit(YZES_PATH.'assets'.'/'.'img'));
+        define('YZES_JS',trailingslashit(YZES_URL.'assets/js'));
+        define('YZES_IMAGES',trailingslashit(YZES_URL.'assets'.'/'.'img'));
         define('YZES_ADMIN_INC',trailingslashit(YZES_PATH.'admin/inc'));
         define('YZES_ADMIN_CSS',trailingslashit(YZES_URL.'admin/assets/css'));
         define('YZES_ADMIN_JS',trailingslashit(YZES_URL.'admin/assets/js'));

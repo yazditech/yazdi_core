@@ -228,10 +228,12 @@ input:checked + .slider:before {
 }
 
 h1.headline-text > span {
-    font-size: 34px;
+    font-size: 35px;
     display: inline-table;
     margin-left: 10px;
     color: #0073aa;
+    position: relative;
+    bottom: 5px;
 }
 
 a.ym-help {
