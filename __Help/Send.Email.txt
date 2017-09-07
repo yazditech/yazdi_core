@@ -1,0 +1,14 @@
+<!-- Send Email -->
+<?php
+
+	include YZES_PATH . '/inc/gwme_email_sender.php';
+	$email_image_header = get_template_directory_uri() . '/images/email-header.png';
+	ob_start();
+	include Your_Email_Template_PATH . '/tpl/contact-email.php';
+	$email_template = ob_get_clean();
+
+	$email_template = str_replace(array('#new-status#', '#gwme_title#', '#image#'), array($gwme_status, $gwme_title, $email_image_header), $email_template);
+	$obj_email = new YZES_Email();
+	$obj_email->send_html_email('from', 'to', 'title', $email_template);
+
+?>

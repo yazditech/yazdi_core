@@ -1,0 +1,7 @@
+<!-- Send SMS -->
+<?php
+	include YZES_PATH . '/inc/classes/class-yzes-sms.php';
+
+	$obj_yzes_sms = new YZES_SMS( 'username', '1234', '10001431', '09387520909', 'ÊÓÊ ÑíäæÈ' );
+	echo $obj_yzes_sms->send();
+?>

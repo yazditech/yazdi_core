@@ -1,0 +1,211 @@
+.icon-widget {
+    margin-left: 10px;
+}
+
+.quick-access {
+    display: inline-block;
+    padding: 30px;
+    border: 1px solid #e1e1e1;
+    color: white;
+    box-shadow: 2px 3px 7px #dedede;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.quick-access a {
+    color: grey;
+}
+
+.quick-access:hover a {
+    color: white;
+    transition: .3s;
+}
+
+.quick-access:hover {
+    transition: .3s;
+}
+
+.qa-orange:hover {
+    background-color: #f0ad4e;
+}
+
+.qa-blue:hover {
+    background-color: #337ab7;
+}
+
+.qa-green:hover {
+    background-color: #5cb85c;
+}
+
+.qa-red:hover {
+    background-color: #d9534f;
+}
+
+.qa-grey {
+    background-color: #e1e1e1;
+}
+
+.yazdi-wp-tbl thead > tr {
+    background-color: #e1e1e1;
+}
+
+.yazdi-wp-tbl thead td {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.yazdi-wp-tbl tbody tr:hover {
+    background-color: #efefef;
+    text-shadow: 0px 1px 2px grey;
+    color: grey;
+    transition: .3s;
+}
+
+.yazdi-wp-tbl thead th {
+    border-top: 2px solid #0073aa;
+    color: #0073aa !important;
+    background-color: #f5f5f5 !important;
+}
+
+.yazdi-wp-tbl tfoot th {
+    border-bottom: 2px solid #0073aa !important;
+    color: #0073aa !important;
+    background-color: #f5f5f5 !important;
+}
+
+.yazdi-wp-tbl td {
+    line-height: 2.5em !important;
+}
+
+.yazdi-wp-tbl td button,
+.yazdi-wp-tbl td a {
+    height: 36px !important;
+}
+
+.yazdi-wp-tbl td button > span {
+    margin-top: 4px;
+}
+
+.yazdi-wp-tbl td a > span {
+    margin-top: 8px;
+}
+
+.dash-left-btn {
+    margin-top: 8px;
+}
+
+.ym-wrapper h2.hndle {
+    padding-top: 10px;
+}
+
+.tbl-a-btn {
+    top: 6px !important;
+}
+
+.msg-admin {
+    background-color: #dfefdf !important;
+    display: none;
+}
+
+.msg-admin td {
+    padding: 15px;
+    color: grey;
+    border-top: 3px solid #e1e1e1;
+    border-bottom: 3px solid #e1e1e1;
+}
+
+.page-numbers {
+    padding: 10px 10px 7px !important;
+    font-weight: bold !important;
+}
+
+.ym-wrapper {
+    background-color: white;
+    padding: 14px 17px;
+    margin-right: -10px;
+    margin-top: 20px;
+    border-top: 2px solid #0073aa;
+    border-bottom: 2px solid #0073aa;
+    border-right: 2px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+}
+
+.star-req {
+    color: red;
+    margin-left: 6px;
+}
+
+.color-wp-blue {
+    color: #0073aa;
+}
+
+/* Start Styles for Yazdi Settings Page */
+/* Start Styles for Yazdi Settings Page */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 23px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #0085ba;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #0085ba;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+/* End Styles for Yazdi Settings Page */
+
+.ym-row > label:nth-child(1) {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.ym-row {
+    height: 45px;
+}

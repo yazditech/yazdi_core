@@ -1,0 +1,17 @@
+<!--Persian Date Selection Example (Amib)-->
+<input type="text" id="pcalasd">
+<script>
+	( function( $ ) {
+		$.fn.persianCalendar = function(extra) {
+			return this.each( function( index, element ) {
+				var id = jQuery(element).attr("id");
+				new AMIB.persianCalendar( id, extra );
+			} );
+		};
+	})( jQuery );
+
+	jQuery("input[id^=date_]").persianCalendar( {
+		initialDate: '1392-10-20',
+		defaultDate: '1392-10-20'
+	} );
+</script>
