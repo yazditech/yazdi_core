@@ -10,7 +10,7 @@
  * Plugin Name: Yazdi Essentials
  * Plugin URI:  http://mahdiyazdi.com
  * Description: Essential Libraries for Yazdi Plugins. These Libraries are Required. You have to activate this plugin to avoid Fatal Errors.
- * Version:     1.7.0
+ * Version:     1.8.0
  * Author:      Mahdi Yazdi
  * Author URI:  http://mahdiyazdi.com
  * Text Domain: yazdi_essentials
