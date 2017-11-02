@@ -268,6 +268,13 @@ a.ym-help > span {
     display: none;
 }
 
+.ym-help-details ul {}
+.ym-help-details ul li {
+    line-height: 34px;
+    list-style: circle;
+    margin-right: 48px;
+}
+
 xmp.ym-codes {
     direction: ltr;
     text-align: left;
@@ -291,11 +298,11 @@ xmp.ym-codes {
 .yazdi-page .ym-select,
 .yazdi-page textarea ,
 .yazdi-page input[type="file"] {
-    font-size: 14px;
+    font-size: 16px;
     padding: 4px 12px;
     border: 1px solid #e1e1e1;
-    border-radius: 4px;
-    box-shadow: 0 6px 11px -6px #ddd;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px 0px #ddd;
     height: 36px;
 }
 .yazdi-page textarea {
@@ -303,10 +310,10 @@ xmp.ym-codes {
 }
 
 .yazdi-page .ym-select span {
-    font-size: 21px;
+    font-size: 16px;
     position: absolute;
     left: 7px;
-    top: 9px;
+    top: 11px;
     color: #929292;
 }
 

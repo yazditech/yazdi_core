@@ -6,7 +6,7 @@
             <div id="gwc-register-wrapper" class="wow fadeInRight">
                 <div class="updated notice is-dismissible ym-msg" style="display: none;"></div>
                 <div class="ym-wrapper">
-                    <form action="" name="gwc_register_frm" id="gwc_register_frm" method="POST" class="frmLogin pull-right">
+                    <form action="" name="gwc_register_frm" id="gwc_register_frm" method="POST" class="frmLogin">
 
 <!--                        AMIB -->
                         <div class="frm-row">
