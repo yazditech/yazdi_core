@@ -1,19 +1,19 @@
 <?php
 /**
- * Yazdi Essentials
+ * Yazdi Core
  *
  * @author      Mahdi Yazdi
- * @copyright   2017 MahdiYazdi
+ * @copyright   2018 MahdiYazdi
  * @license     GPL-2.0+
  *
  * @wordpress-plugin
- * Plugin Name: Yazdi Essentials
- * Plugin URI:  http://mahdiyazdi.com
+ * Plugin Name: Yazdi Core
+ * Plugin URI:  http://yazdi.me
  * Description: Essential Libraries for Yazdi Plugins. These Libraries are Required. You have to activate this plugin to avoid Fatal Errors.
- * Version:     1.8.0
+ * Version:     1.9.0
  * Author:      Mahdi Yazdi
- * Author URI:  http://mahdiyazdi.com
- * Text Domain: yazdi_essentials
+ * Author URI:  http://yazdi.me
+ * Text Domain: yazdi_core
  * License:     GPL-2.0+
  * License URI: https://www.gnu.org/licenses/licenses.en.html
  */
@@ -21,7 +21,7 @@
 // Limit Direct Access.
 defined('ABSPATH') || exit('no access');
 
-final class Yazdi_Essentials {
+final class Yazdi_Core {
     private static $_instance = NULL;
 
     public static function getInstance() {
@@ -47,7 +47,7 @@ final class Yazdi_Essentials {
         define('YZES_ADMIN_CSS',trailingslashit(YZES_URL.'admin/assets/css'));
         define('YZES_ADMIN_JS',trailingslashit(YZES_URL.'admin/assets/js'));
 
-        define('YZES_NAME', 'yazdi_essentials');
+        define('YZES_NAME', 'yazdi_core');
         define('YZES_VERSION', '1.0.0');
 
 
@@ -105,5 +105,5 @@ final class Yazdi_Essentials {
     }
 }
 
-Yazdi_Essentials::getInstance();
+Yazdi_Core::getInstance();
 
