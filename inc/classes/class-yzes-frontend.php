@@ -2,12 +2,12 @@
 /**
  * Fired public and other codes and methods
  *
- * @link       http://mahdiyazdi.com
+ * @link       http://yazdi.me
  * @since      1.0.0
  *
- * @package    yazdi_essentials
- * @subpackage yazdi_essentials/inc
- * @author     Mahdi Yazdi <info@mahdiyazdi.com>
+ * @package    yazdi_core
+ * @subpackage yazdi_core/inc
+ * @author     Mahdi Yazdi <info@yazdi.me>
  */
 
 class YZES_Frontend {
@@ -62,7 +62,7 @@ class YZES_Frontend {
 		 * defined in Plugin_Name_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The yazdi_essentials-Loader will then create the relationship
+		 * The yazdi_core-Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */

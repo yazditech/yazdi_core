@@ -5,11 +5,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @link       http://mahdiyazdi.com
+ * @link       http://yazdi.me
  * @since      1.0.0
  * @package    Plugin_Name
  * @subpackage Plugin_Name/admin
- * @author     Mahdi Yazdi <info@mahdiyazdi.com>
+ * @author     Mahdi Yazdi <info@yazdi.me>
  */
 
 class YZES_Admin {
@@ -94,7 +94,7 @@ class YZES_Admin {
 	public function yzes_add_admin_menus() {
 
 		$yzes_theme_options_hook = add_menu_page( 'تنظیمات کتابخانه‌ها', 'کتابخانه‌ها', 'manage_options',
-		'yazdi_essentials-page', array( $this, 'yzes_options_page' ), 'dashicons-admin-generic');
+		'yazdi_core-page', array( $this, 'yzes_options_page' ), 'dashicons-admin-generic');
 
 	}
 

@@ -2,12 +2,12 @@
 /**
  * Fired public and other codes and methods
  *
- * @link       http://mahdiyazdi.com
+ * @link       http://yazdi.me
  * @since      1.0.0
  *
- * @package    yazdi_essentials
- * @subpackage yazdi_essentials/inc
- * @author     Mahdi Yazdi <info@mahdiyazdi.com>
+ * @package    yazdi_core
+ * @subpackage yazdi_core/inc
+ * @author     Mahdi Yazdi <info@yazdi.me>
  */
 
 class YZES_Public {
